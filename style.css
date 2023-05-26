@@ -1,0 +1,103 @@
+* {
+    font-family: 'Roboto', sans-serif;                           /* Yazı tipi*/
+    margin: 0;                                                      /*Sayfada yerleşmesi*/
+    padding: 0;                                                     /*Sayfada yerleşmesi*/
+    box-sizing: border-box;                                         /*Kutu oluşturulması*/
+}
+
+body {
+    background-color: #eed2cc94;                                    /*Arka plan rengi*/
+}
+
+.app {
+    background: #6c9a8b;                                          /*Ana kutunun rengi*/
+    width: 90%;                                                     /*Kutunun genişliği*/
+    max-width: 700px;                                               /*Kutunun maksimum genişliği*/
+    margin: 110px auto 0;                                           /*Kutunun sayfada ortada yerleşmesi*/
+    padding: 30px;                                                  /*Kutunun sağ-sol-alt-üst genişliği*/
+    border-radius: 15px;                                            /*Kenarların yuvarlak olması*/
+} 
+
+.quiz {
+    background-color: #6c9a8b;                                    /*Sorunun ve next buttonun arkasındaki rengi*/
+    padding: 30px 0;                                                /*Arka plan kutusunun sağ-sol-alt-üst genişliği*/
+}
+
+.app h1 {
+    color: #1d3c45;                                               /*h1 tagın rengi*/
+    font-size: 25px;                                                /*h1 tagın yazı büyüklüğü*/
+    font-weight: 550;                                             /*h1 tagın yazı kalınlığı*/
+    text-align: center;                                             /*h1 tagının ortaya alınması*/
+    border-bottom: 2.5px solid #1d3c45;                            /*h1 tagın çizgin kalınlığı, stili ve rengi*/
+    padding-bottom: 30px;                                           /*h1 tagın ve çizginin arasındaki boşluk*/
+    
+}
+
+.quiz h2 {
+    color: #1d3c45;                                               /*h1 tagın rengi*/
+    font-size: 35px;                                                /*h1 tagın yazı büyüklüğü*/
+    font-weight: 600;                                             /*h1 tagın yazı kalınlığı*/
+    padding-bottom: 30px;                                           /*h1 tagın ve çizginin arasındaki boşluk*/
+    text-align: center;                                             /*h1 tagının ortaya alınması*/
+    
+}
+
+
+.btn {
+    background: #e8998d;                                          /*buttonun arka rengi*/
+    color: #1d3c45;                                               /*buttonun yazı rengi*/
+    font-size: 18px;                                                /*buttonun yazı büyüklüğü*/
+    text-align: center;                                             /*buttonun yazısının ortada olması*/
+    font-weight: 700;                                             /*buttonun kalınlığı*/
+    width: 95%;                                                     /*buttonun kutudaki genişliği*/
+    border: 1.5px solid #1d3c45;                                    /*buttonun kenarındaki kalınlık, stil ve renk*/
+    position: relative;                                             /*pozisyon*/
+    left: 15px;                                                     /*sol*/
+    right: 20px;                                                    /*sağ*/
+    padding: 12px;                                                  /*buttonun sağ-sol-alt-üst genişliği*/
+    margin: 15px 0;                                                 /*buttonların aralarındaki mesafe*/
+    border-radius: 30px;                                            /*kenardakı yuvarlaklık*/
+    cursor: pointer;                                                /*maus üstüne gittiği zaman algılaması*/
+    transition: all 0.4s;                                           /*maus üstüne gittiği zaman renginin değişmesi 0.4s sürsün*/
+}
+
+
+#btn:hover:not([disabled]) {
+    background: #864f40;                                          /*gizlenmiş buttonun arka rengi*/
+    color: #fff;                                                  /*gizlenmiş buttonun yazı rengi*/
+    font-weight: 700;                                               /*gizlenmiş buttonun yazı kalınlığı*/
+}
+
+#btn:disabled{
+    cursor: no-drop;                                                /*maus üstüne gittiğinde gözüküyor olmasın (stop)*/
+} 
+
+#next-btn {
+    background: #1d3c45;                                          /*next buttonun arka plan rengi*/
+    color: #E3856B;                                               /*next buttonun yazı rengi*/
+    font-size: 22px;                                                /*next buttonun yazı büyüklüğü*/
+    font-weight: 600px;                                             /*next buttonun yazı kalınlığı*/
+    text-align: center;                                             /*next bttonun yazısının orta hizada olması*/
+    padding: 9px;                                                   /*next buttonun sağ-sol-üst-alt genişliği*/
+    width: 180px;                                                   /*next buttonun genişliği*/
+    border: 8px;                                                    /*next buttonun kenarlığın kalınlığı*/
+    margin: 30px auto 0;                                            /*soru ve next buttonun arasındaki mesafe*/
+    border-radius: 30px;                                            /*next buttonun kenarının yuvarlak olması*/
+    cursor: pointer;                                                /*maus üstüne gittiği zaman odaklansın*/
+    transition: all 0.4s;                                           /*maus üstüne gittiği zaman renk değişimi 0.4s sürsün*/
+    display: grid;                                                  /*next buttonun ortada olması*/
+}
+
+#next-btn:hover{
+    background: #366f80;                                          /*maus üstüne gittiğinde arka planın rengi*/
+    color: #fff;                                                  /*maus üstüne gittiğinde yazı rengi*/
+    font-weight: 700;                                               /*maus üstüne gittiğinde yazı kalınlığı*/
+}
+
+.correct{
+    background: #8adf6d;                                           /*cevap doğruysa yeşil rengi olsun*/
+}
+
+.incorrect{
+    background: #ff3d3d;                                           /*cevap yanlışsa kırmızı reng olsun*/
+}
